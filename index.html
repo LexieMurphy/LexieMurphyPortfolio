@@ -17,66 +17,75 @@
 
   <section id="mainmiddlesection">
 
-    <header class="AboutMe">About Me</header>
+    <header class="AboutMe"></header>
 
-    <img class="profile-image" src="assets/images/Lexie Business Photo-1.jpg" alt="Profile Image" style="width:260px;height:270px;">
-
-    <p id="division">Hello my name is Lexie Murphy and welcome to my Portfolio!
-    </p>
-
-    <p id="division">I am a Construction Manager by degree, an Engineering Design Technology manager by trade, and a
-      web developer at heart! I graduated from the University of Central Missiouri with a BS in Construction Management
-      and a minor in Business Administration. While attending school, I also lettered in athletics through women's
-      soccer as a Jennie. College is also where I was lucky enough to meet my incredible husband, Colin. We said our
-      "I-do's" back in 2013 and now have two kiddos we've added to the mix. Malachi (Kai) turned 3 in August, and
-      Evangeline (Evie) just turned one at the end of October. I am one blessed and lucky lady.
-    </p>
-
-    <p id="division">I am currently employed at Kiewit Power in Lenexa, KS and get to work each day as a part of a
-      design technology team that supports our construction and engineering project's sites to (upon completion of
-      construction) provide power to your homes - Pretty cool eh? I manage two groups within the department, the
-      SharePoint Developers and the Web Developers. Both groups get to tackle very unique challenges and design/develop
-      business solutions on a daily basis. I am very excited that moving forward, I can begin to dive deeper into the
-      web development side and provide support as opportunities arise.
-    </p>
+    <img class="profile-image" src="assets/images/Lexie Business Photo-1.jpg" alt="Profile Image" style="width:300px;height:270px;">
 
 
-    <div class="container">
-      <h2>Modal Example</h2>
-      <!-- Trigger the modal with a button -->
-      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-    
-      <!-- Modal -->
-      <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog">
-        
-          <!-- Modal content-->
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title">Modal Header</h4>
-            </div>
-            <div class="modal-body">
-              <p>Some text in the modal.</p>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-          
-        </div>
+    <div id="name">Lexie Jean Murphy</div>
+
+    <!-- Trigger/Open The Modal -->
+    <div><button id="myBtn">About Me</button></div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="division">Hello my name is Lexie Murphy and welcome to my Portfolio!
+        </p>
+
+        <p id="division">I am a Construction Manager by degree, an Engineering Design Technology manager by trade, and
+          a
+          web developer at heart! I graduated from the University of Central Missiouri with a BS in Construction
+          Management
+          and a minor in Business Administration. While attending school, I also lettered in athletics through women's
+          soccer as a Jennie. College is also where I was lucky enough to meet my incredible husband, Colin. We said
+          our
+          "I-do's" back in 2013 and now have two kiddos we've added to the mix, Malachi (Kai) and
+          Evangeline (Evie). I am one blessed and lucky lady.
+        </p>
+
+        <p id="division">I am currently employed at Kiewit Power in Lenexa, KS and get to work each day as a part of a
+          design technology team that supports our construction and engineering project's sites to (upon completion of
+          construction) provide power to your homes - Pretty cool eh? I manage two groups within the department, the
+          SharePoint Developers and the Web Developers. Both groups get to tackle very unique challenges and
+          design/develop
+          business solutions on a daily basis. I am very excited that moving forward, I can begin to dive deeper into
+          the
+          web development side and provide support as opportunities arise.
+        </p>
       </div>
-      
     </div>
 
-    
+    <script>
+      var modal = document.getElementById('myModal');
+
+      var btn = document.getElementById("myBtn");
+
+      var span = document.getElementsByClassName("close")[0];
+
+      btn.onclick = function () {
+        modal.style.display = "block";
+      }
+
+      span.onclick = function () {
+        modal.style.display = "none";
+      }
+
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script>
+
+    <header class="AboutMe"></header>
 
 
   </section>
 
-
-
-  
 
   <footer>
     <div class="icon-nav-section">
@@ -86,7 +95,7 @@
             <a href="https://LinkedIn.com"><img class="icon" src="assets/images/LinkedInIcon.png" alt="LinkedIn"></a>
             <a href="https://github.com/LexieMurphy"><img class="icon" src="assets/images/GitHubIcon.png" alt="GitHub"></a>
             <a href="portfolio.html"><img class="icon" src="assets/images/PortfolioIcon.png" alt="Portfolio"></a>
-            <a><img class="icon" src="assets/images/ContactIcon.png" alt="Contact" data-toggle="modal" data-target="#contactModal"></a>
+            <a href="contact.html"><img class="icon" src="assets/images/ContactIcon.png" alt="Contact"></a>
 
           </div>
         </div>
