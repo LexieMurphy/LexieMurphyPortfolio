@@ -126,7 +126,7 @@ table {
     border: 5px solid rgb(255, 220, 0);
     margin-left: auto;
     margin-right: auto;
-    margin-top: 180px;
+    margin-top: 140px;
     margin-bottom: 120px;
     overflow: auto;
     clear: both;
@@ -196,14 +196,13 @@ table {
     margin-left: auto;
     margin-right: auto;
     width: 120px;
-    height: 100px;
-    padding: 0px 10px 0px 10px;
+    height: 120px;
+    padding: 10px 10px 10px 10px;
     cursor: pointer;
   }
 
   .iconsRow {
     margin: 0px;
-    height: 100px;
   }
   
   
@@ -225,6 +224,5 @@ table {
     left: 0;
     bottom: 0;
     width: 100%;
-    position: fixed;
   }
   
