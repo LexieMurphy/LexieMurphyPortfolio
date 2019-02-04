@@ -126,7 +126,7 @@ table {
     border: 5px solid rgb(255, 220, 0);
     margin-left: auto;
     margin-right: auto;
-    margin-top: 120px;
+    margin-top: 180px;
     margin-bottom: 120px;
     overflow: auto;
     clear: both;
@@ -143,6 +143,7 @@ table {
     font-size: 25px;
     font-weight: bold;
     text-align: left;
+    font: #333;
   }
   
   section {
